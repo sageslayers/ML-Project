@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="timer.css" rel="stylesheet" >
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,900&family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+<script src="webcam.js"></script>
+
+</head>
+
+<body style=" background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);">
+	
+
+			<div class="row">
+				<div class="col">
+					<p id="myScore" style="text-align:center;font-family: 'Titillium Web', sans-serif;font-size:60pt">0</p>
+				</div>
+				<div class="col">
+					<p  style="text-align:center;font-family: 'Titillium Web', sans-serif;font-size:60pt">:</p>
+				</div>
+				<div class="col">
+					<p id="enemyScore" style="text-align:center;font-family: 'Titillium Web', sans-serif;font-size:60pt">0</p>
+				</div>
+				
+			</div>
+	</div>
+	
+		<div class="row">
+			<div class="col">
+				<video autoplay playsinline muted id="wc" width="224" height="224"></video>
+			</div>
+			<div class="col">
+				<button style="font-family: 'Titillium Web', sans-serif;" type="button" id="startPredicting" onclick="startPredicting()" class="btn-lg btn-warning">Play</button>
+			</div>
+			<div class="col">
+				<div id="app"></div>
+			<img id="myCanvas" width="224" height="224" style="border:3px solid #000000;"></img>
+				<p id="prediction" style="font-family: 'Poppins', sans-serif;"></p>
+			</div>
+		</div>
+			
+		<div class="row">
+			<div class="col">
+				<p id="res" style="text-align:center;font-family: 'Poppins', sans-serif; font-size: 40pt;"></p>
+			</div>
+		</div>
+
+
+</body>
+
+<script src="index.js"></script>
+<script src="timer.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
